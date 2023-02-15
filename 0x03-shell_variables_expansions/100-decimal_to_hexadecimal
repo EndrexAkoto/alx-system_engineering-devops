@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 #!bin/bash
+=======
+#!/bin/bash
+>>>>>>> bb015d68060dcb8a5ceaada72649b20541377d0a
 printf '%x\n' $DECIMAL
