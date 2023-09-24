@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#ssh key used  to connect to ~/.ssh/school
+
+ssh -i ~/.ssh/school ubuntu@18.207.139.55
