@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # debugging port 80
-
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-#nginx restart
 service nginx start
-#terminates first nginx process ID
 kill "$(pgrep 'nginx' | head -1)"
+
