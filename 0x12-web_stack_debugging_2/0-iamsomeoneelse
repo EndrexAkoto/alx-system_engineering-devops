@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# run whomami on user passed as arg
+sudo -u "$1" whoami
+
