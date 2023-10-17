@@ -1,7 +1,8 @@
- #!/usr/bin/env bash
-  2 # Debugging the server
-  3 
-  4 rm /etc/nginx/sites-enabled/default
-  5 ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-  6 service nginx restart
-  7 kill "$(pgrep 'nginx' | head -1)"
+#!/usr/bin/env bash
+# debugging port 80
+
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+#nginx restart
+service nginx start
+#terminates first nginx process ID
+kill "$(pgrep 'nginx' | head -1)"
