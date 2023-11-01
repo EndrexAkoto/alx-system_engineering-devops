@@ -1,5 +1,5 @@
-!/usr/bin/env bash
-# 404 error page
+#!/usr/bin/env bash
+# a new 404 error page
 sudo apt-get update
 sudo apt-get install -y nginx 
 echo "Hello World!" > index.html
@@ -24,4 +24,3 @@ echo "server {
 }" > default
 sudo mv -f default /etc/nginx/sites-available/default
 sudo service nginx restart
-
