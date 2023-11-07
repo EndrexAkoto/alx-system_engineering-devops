@@ -4,6 +4,7 @@
 """
 import requests
 
+
 def count_words(subreddit, word_list, hot_list=[], after=None, word_counts={}):
     if after is None:
         url = f"https://www.reddit.com/r/{subreddit}/hot.json"
@@ -47,6 +48,7 @@ def count_words(subreddit, word_list, hot_list=[], after=None, word_counts={}):
     for word, count in sorted_word_counts:
         print(f"{word}: {count}")
 
+
 if __name__ == '__main':
     import sys
 
@@ -56,4 +58,5 @@ if __name__ == '__main':
     else:
         subreddit = sys.argv[1]
         word_list = sys.argv[2:]
+
         count_words(subreddit, word_list)
