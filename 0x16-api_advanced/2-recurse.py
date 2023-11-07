@@ -4,6 +4,7 @@
 """
 import requests
 
+
 def recurse(subreddit, hot_list=[], after=None):
     if after is None:
         url = f"https://www.reddit.com/r/{subreddit}/hot.json"
@@ -30,6 +31,7 @@ def recurse(subreddit, hot_list=[], after=None):
             return None
     else:
         return None
+
 
 if __name__ == '__main':
     import sys
