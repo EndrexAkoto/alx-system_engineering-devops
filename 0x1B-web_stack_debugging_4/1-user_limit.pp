@@ -1,4 +1,4 @@
-# Allow holberton to log and file access
+# Allow holberton to log in and increase file access
 
 # Increase file limit for holberton
 exec { 'increase-hard-file-limit-for-holberton-user':
